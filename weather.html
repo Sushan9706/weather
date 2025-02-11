@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weatherstyle.css">
+</head>
+
+<body>
+    <main>
+        <div id="weather-conditon">
+            <h1>Weather condition</h1>
+
+
+            <!-- Search Box -->
+            <div class="search-box">
+
+                <input class="input" type="text" placeholder="Enter your city">
+                <button class="btn">Search</button>
+            </div>
+
+            <div id="cityanddate">
+                <!-- City name -->
+                <p class="city-name"></p>
+
+                <!-- Date -->
+                <p id="date"></p>
+
+            </div>
+
+            <div id="mid">
+
+
+                <div>
+                    <!-- Temperature -->
+                    <p id="temp" class="temperature"></p>
+
+                    <p id="main-weather"></p>
+                    <p id="weather-condition"></p>
+                </div>
+
+                <!-- Weather icon -->
+                <div class="weatherIcon">
+                    <img height="250px" class='weather-image' src="" alt="weather condition">
+                    <!-- Weather Condition -->
+
+
+                </div>
+
+
+
+            </div>
+            <div id="last">
+                <div class="match">
+                    <!-- Pressure -->
+                    <p class="end"><strong>Pressure</strong></p>
+                    <p class="pressure"></p>
+                </div>
+
+                <div class="match">
+
+                    <!-- Humidity -->
+                    <p class="end"><strong>Humidity</strong></p>
+                    <p class="humidity"></p>
+                </div>
+                <div class="match">
+
+                    <!-- Wind Speed -->
+                    <p class="end"><strong>Wind Speed</strong></p>
+                    <p class="wind-speed"></p>
+
+                </div>
+
+                <div class="match">
+                    <!-- Wind Direction -->
+                    <p class="end"><strong>Wind Direction</strong></p>
+                    <p class="wind-direction"></p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div id="copyright">
+            <p class="footer">Copyright &copy; 2024 Sushan Shrestha All Rights Reserve</p>
+        </div>
+    </footer>
+    <script src="weather.js">
+    </script>
+    
+
+</body>
+
+</html>
