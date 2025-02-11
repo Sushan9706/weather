@@ -5,7 +5,7 @@
     $password = 'gxPkBZZIbgVoHnnbTFWrGcHgOjzXOtQx';
     $db = 'railway';
     $port = '31788';
-    $conn = mysqli_connect($host, $username, $password. $db, $port);
+    $conn = mysqli_connect($host, $username, $password, $db, $port);
     if (!$conn) {
         die('Failed to connect: ' . mysqli_connect_error());
     }
