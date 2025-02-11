@@ -1,21 +1,18 @@
 <?php
-// mysql://root:gxPkBZZIbgVoHnnbTFWrGcHgOjzXOtQx@junction.proxy.rlwy.net:31788/railway
-    $host = 'junction.proxy.rlwy.net';
+    $host = 'localhost';
     $username = 'root';
-    $password = 'gxPkBZZIbgVoHnnbTFWrGcHgOjzXOtQx';
-    $db = 'railway';
-    $port = '31788';
-    $conn = mysqli_connect($host, $username, $password, $db, $port);
+    $password = '';
+    $conn = mysqli_connect($host, $username, $password);
     if (!$conn) {
         die('Failed to connect: ' . mysqli_connect_error());
     }
 
     // Create database
-    // $createDatabase = "CREATE DATABASE IF NOT EXISTS Weathers;";
-    // mysqli_query($conn, $createDatabase);
+    $createDatabase = "CREATE DATABASE IF NOT EXISTS Weathers;";
+    mysqli_query($conn, $createDatabase);
 
     // Select the created database
-    mysqli_select_db($conn, 'railway');
+    mysqli_select_db($conn, 'Weathers');
 
     // Create table
     $createTable = "CREATE TABLE IF NOT EXISTS Cities (  
