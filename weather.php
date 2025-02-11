@@ -11,11 +11,11 @@
     }
 
     // Create database
-    $createDatabase = "CREATE DATABASE IF NOT EXISTS Weathers;";
-    mysqli_query($conn, $createDatabase);
+    // $createDatabase = "CREATE DATABASE IF NOT EXISTS Weathers;";
+    // mysqli_query($conn, $createDatabase);
 
     // Select the created database
-    mysqli_select_db($conn, 'Weathers');
+    mysqli_select_db($conn, 'railway');
 
     // Create table
     $createTable = "CREATE TABLE IF NOT EXISTS Cities (  
