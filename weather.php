@@ -1,8 +1,11 @@
 <?php
-    $host = 'localhost';
+// mysql://root:gxPkBZZIbgVoHnnbTFWrGcHgOjzXOtQx@junction.proxy.rlwy.net:31788/railway
+    $host = 'junction.proxy.rlwy.net';
     $username = 'root';
-    $password = '';
-    $conn = mysqli_connect($host, $username, $password);
+    $password = 'gxPkBZZIbgVoHnnbTFWrGcHgOjzXOtQx';
+    $db = 'railway';
+    $port = '31788';
+    $conn = mysqli_connect($host, $username, $password. $db, $port);
     if (!$conn) {
         die('Failed to connect: ' . mysqli_connect_error());
     }
